@@ -1,0 +1,42 @@
+//import Dashboard from 'views/Dashboard/Dashboard';
+import MetadataForm from 'views/MetadataForm/MetadataForm';
+import AssetsForm from 'views/AssetsForm/AssetsForm';
+import TableList from 'views/TableList/TableList';
+//import Typography from 'views/Typography/Typography';
+//import Icons from 'views/Icons/Icons';
+//import Maps from 'views/Maps/Maps';
+//import Notifications from 'views/Notifications/Notifications';
+//import Upgrade from 'views/Upgrade/Upgrade';
+
+/*
+const appRoutes = [
+    { path: "/dashboard", name: "Dashboard", icon: "pe-7s-graph", component: Dashboard },
+    { path: "/user", name: "User Profile", icon: "pe-7s-user", component: UserProfile },
+    { path: "/table", name: "Table List", icon: "pe-7s-note2", component: TableList },
+    { path: "/typography", name: "Typography", icon: "pe-7s-news-paper", component: Typography },
+    { path: "/icons", name: "Icons", icon: "pe-7s-science", component: Icons },
+    { path: "/maps", name: "Maps", icon: "pe-7s-map-marker", component: Maps },
+    { path: "/notifications", name: "Notifications", icon: "pe-7s-bell", component: Notifications },
+    { upgrade: true, path: "/upgrade", name: "Upgrade to PRO", icon: "pe-7s-rocket", component: Upgrade },
+    { redirect: true, path:"/", to:"/dashboard", name: "Dashboard" }
+];
+*/
+
+import Home from 'views/Home/Home';
+import Secure from 'views/Secure/Secure'
+import Login from 'views/Login/Login'
+import Logout from 'views/Logout/Logout'
+import UploadDocuments from 'views/Upload/Upload'
+
+const appRoutes = [
+    { path: "/home", name: "HomeView", icon: "pe-7s-graph", component: Home },
+    { path: "/secure", name: "Register", icon: "pe-7s-user", component: Secure },
+    { path: "/login", name: "Login", icon: "pe-7s-note2", component: Login },
+    { path: "/uploadDocuments", name: "Upload Documents", icon: "pe-7s-cloud-upload", component: UploadDocuments },
+    { path: "/searchAssets", name: "Search Assets", icon: "pe-7s-search", component: AssetsForm },
+    { path: "/searchMeta", name: "Search Metadata", icon: "pe-7s-search", component: MetadataForm },
+    { path: "/logout", name: "Logout", icon: "pe-7s-bell", component: Logout },
+    { redirect: true, path:"/", to:"/home", name: "HomeView" }
+];
+
+export default appRoutes;
